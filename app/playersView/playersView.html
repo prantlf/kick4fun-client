@@ -1,0 +1,18 @@
+<div ng-controller='PlayersCtrl as players'>
+    <p>This is the partial for view of players.</p>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="item" ng-repeat="item in players.items">
+                    <h3>{{item.id}}</h3>
+                    <p>{{item.fullname}}</p>
+                    <p><strong>{{item.nickname}}</strong></p>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <!-- CREATE ITEM FORM -->
+                <!-- EDIT ITEM FORM -->
+            </div>
+        </div>
+    </div>
+</div>

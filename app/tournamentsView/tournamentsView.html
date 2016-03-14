@@ -1,0 +1,19 @@
+<div ng-controller='TournamentsCtrl as tournaments'>
+  <p>This is the partial for view of tournaments.</p>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="item" ng-repeat="item in tournaments.items">
+          <h3>{{item.id}}</h3>
+          <p>{{item.name}}</p>
+          <p><strong>{{item.status}}</strong></p>
+          <p>{{item.type}}</p>
+        </div>
+      </div>
+      <div class="col-md-8">
+        <!-- CREATE ITEM FORM -->
+        <!-- EDIT ITEM FORM -->
+      </div>
+    </div>
+  </div>
+</div>

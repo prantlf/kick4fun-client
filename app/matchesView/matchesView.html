@@ -1,0 +1,17 @@
+<div ng-controller='MatchesCtrl as matches'>
+    <p>The following matches have already been played:</p>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="item" ng-repeat="item in matches.items">
+                    <p>{{item.team1[0]}} &amp; {{item.team1[1]}} - {{item.team2[0]}} &amp; {{item.team2[1]}} :
+                        {{item.result[0]}}:{{item.result[1]}} {{item.result[2]}}:{{item.result[3]}} {{item.result[4]}}:{{item.result[5]}}</p>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <!-- CREATE ITEM FORM -->
+                <!-- EDIT ITEM FORM -->
+            </div>
+        </div>
+    </div>
+</div>

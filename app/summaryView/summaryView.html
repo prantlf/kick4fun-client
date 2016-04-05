@@ -1,0 +1,19 @@
+<div ng-controller='SummaryCtrl as summary'>
+  <p>Tournament Summary</p>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="item" ng-repeat="item in summary.items">
+          <h3>{{item.longName}}</h3>
+          <p>Tournament type: {{item.name}}</p>
+          <p><strong>Status: {{item.status}}</strong></p>
+          <p>Organizer: {{item._organizer}}</p>
+        </div>
+      </div>
+      <div class="col-md-8">
+        <!-- CREATE ITEM FORM -->
+        <!-- EDIT ITEM FORM -->
+      </div>
+    </div>
+  </div>
+</div>

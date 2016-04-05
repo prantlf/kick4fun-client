@@ -1,0 +1,16 @@
+<div ng-controller='ParticipantsCtrl as participants'>
+    <p>The following people participate in this tournament:</p>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="item" ng-repeat="item in participants.items">
+                    <h3>{{item}}</h3>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <!-- CREATE ITEM FORM -->
+                <!-- EDIT ITEM FORM -->
+            </div>
+        </div>
+    </div>
+</div>
